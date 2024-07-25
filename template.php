@@ -5,21 +5,21 @@
   <title>Title</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="js/jQerry.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
 <script>
-    $.ajax(
-        'index.php',
-        {
-            success: function(data) {
-                alert('AJAX call was successful!');
-                alert('Data from the server' + data);
-            },
-            error: function() {
-                alert('There was some error performing the AJAX call!');
-            }
+    $.ajax({
+        url : 'test.php',
+        method : 'GET',
+        dataType : 'json',
+        success : function (result) {
+            alert(result);
+        },
+        error : function () {
+            alert("error");
         }
-    );
+    })
 </script>
 </body>
 </html>

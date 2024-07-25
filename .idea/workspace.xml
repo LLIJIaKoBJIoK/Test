@@ -5,33 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98dd337a-3135-4e1a-9258-ac7d190c7351" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/T" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Templates/base_html.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Templates/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/path.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Core/AbstractController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Core/ErrorController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Core/Http/Response.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Core/Router/DispatchedRoute.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Core/Router/UrlDispatcher.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Core/Template/Template.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Core/Template/View.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Helper/Common.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine/Services/Template/Provider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controller/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/HomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/CMS.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/CMS.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/Core/Router/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/Core/Router/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine/Services/Router/Provider.php" beforeDir="false" afterPath="$PROJECT_DIR$/engine/Services/Router/Provider.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -46,6 +31,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="C:\DEV\php-8.3.0-nts-Win32-vs16-x64\php.exe">
     <include_path>
@@ -67,6 +55,7 @@
     "PHP Script.Path.php.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "Merging main",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
@@ -112,10 +101,22 @@
       <workItem from="1721578214089" duration="15217000" />
       <workItem from="1721674657000" duration="3054000" />
       <workItem from="1721839467807" duration="9250000" />
+      <workItem from="1721883904985" duration="8756000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
