@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98dd337a-3135-4e1a-9258-ac7d190c7351" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grid/HexGrid/Hex.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grid/HexGrid/Layout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grid/HexGrid/Orientation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Grid/HexGrid/Point.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/template.php" beforeDir="false" afterPath="$PROJECT_DIR$/template.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +71,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\v.kobelev\Projects\domains\Test\Grid" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Path.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/engine/Helper/Path.php">
       <method v="2" />
@@ -101,7 +111,7 @@
       <workItem from="1721578214089" duration="15217000" />
       <workItem from="1721674657000" duration="3054000" />
       <workItem from="1721839467807" duration="9250000" />
-      <workItem from="1721883904985" duration="8756000" />
+      <workItem from="1721883904985" duration="18581000" />
     </task>
     <servers />
   </component>

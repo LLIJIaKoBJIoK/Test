@@ -1,6 +1,7 @@
 <?php
 
 $arrHexCoords = [];
+$arr = [];
 
 //Вычисляет координаты углов Гекса
 function pointy_hex_corner($centerHexCoords, $size, $i)
@@ -18,6 +19,7 @@ function pointy_hex_corner($centerHexCoords, $size, $i)
 function drawHex($size, $centerHexCoords)
 {
     global $arrHexCoords;
+    global $arr;
 
     for ($i = 1; $i <=6; $i++)
     {
@@ -31,10 +33,21 @@ function drawHex($size, $centerHexCoords)
       $arrHexCoords[8] . ',' . $arrHexCoords[9] . ' ' .
       $arrHexCoords[10] . ',' . $arrHexCoords[11] . ' ' . "'";
 
-    //echo "<polygon points=" . $temp . "fill='rgb(234,234,234)' id='N' stroke-width='1' stroke='rgb(0,0,0)'/>";
+    echo "<polygon points=" . $temp . "fill='rgb(234,234,234)' id='N' stroke-width='1' stroke='rgb(0,0,0)'/>";
 
-    echo json_encode($arrHexCoords);
+    $arr[] = $arrHexCoords;
     $arrHexCoords = [];
+}
 
+function print_()
+{
+    global $arr;
+
+    if(file_put_contents('js/hexCoords.json', json_encode($arr)))
+    {
+        echo "Success";
+    } else {
+        echo "error";
+    }
 }
 

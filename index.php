@@ -2,6 +2,10 @@
 require_once 'template.php';
 require_once 'test.php';
 
+require 'vendor/autoload.php';
+
+use Grid\HexGrid\Hex;
+
 //header('Content-type: image/png');
 
 $size = 75;
@@ -26,7 +30,7 @@ $mapHex = [
 //Рисует карту Гексов
 function drawMap($mapHex)
 {
-  //echo "<svg width='1000' height='900'>";
+  echo "<svg width='1000' height='900'>";
   global $centerHexCoords;
   global $size;
 
@@ -36,15 +40,22 @@ function drawMap($mapHex)
 
     $q = $hex[0];
     $r = $hex[1];
-
-    $centerHexCoords['x'] = $size * sqrt(3) * ($q + $r/2);
-    $centerHexCoords['y'] = $size * 3/2 * $r;
+      $centerHexCoords['x'] = $size * 3/2 * $q;
+      $centerHexCoords['y'] = $size * sqrt(3) * ($r + $q / 2);
+    //$centerHexCoords['x'] = $size * sqrt(3) * ($q + $r/2);
+    //$centerHexCoords['y'] = $size * 3/2 * $r;
     drawHex($size, $centerHexCoords);
   }
-  //echo "</svg>";
+  echo "</svg>";
   //imagepng($image);
   //imagedestroy($image);
 }
 
 drawMap($mapHex);
-
+//print_();
+foreach ($mapHex as $hex)
+{
+    if ($hex == NULL) continue;
+    $object = new Hex($hex);
+    //var_dump($object);
+}

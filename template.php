@@ -9,17 +9,18 @@
 </head>
 <body>
 <script>
+
     $.ajax({
-        url : 'test.php',
-        method : 'GET',
-        dataType : 'json',
-        success : function (result) {
-            alert(result);
-        },
-        error : function () {
-            alert("error");
+        url: 'js/hexCoords.json',
+        dataType: 'json',
+
+        success: function (data) {
+            test(data)
         }
-    })
+    });
 </script>
+<div id="hex">
+
+</div>
 </body>
 </html>
