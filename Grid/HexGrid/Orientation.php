@@ -4,17 +4,17 @@ namespace Grid\HexGrid;
 
 class Orientation
 {
-    protected $f0;
-    protected $f1;
-    protected $f2;
-    protected $f3;
+    public float $f0;
+    public float $f1;
+    public float $f2;
+    public float $f3;
 
-    protected $b0;
-    protected $b1;
-    protected $b2;
-    protected $b3;
+    protected float $b0;
+    protected float $b1;
+    protected float $b2;
+    protected float $b3;
 
-    protected $start_angel;
+    protected float $start_angel;
 
     public function __construct($f0, $f1, $f2, $f3, $b0, $b1, $b2, $b3, $start_angle)
     {
@@ -28,4 +28,5 @@ class Orientation
         $this->b3 = $b3;
         $this->start_angel = $start_angle;
     }
+
 }

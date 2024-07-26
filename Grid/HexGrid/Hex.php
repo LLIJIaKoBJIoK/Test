@@ -4,7 +4,7 @@ namespace Grid\HexGrid;
 
 class Hex
 {
-    protected $coords = [
+    public array $coords = [
       'q' => 0,
       'r' => 0,
       's' => 0,

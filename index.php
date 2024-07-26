@@ -4,7 +4,7 @@ require_once 'test.php';
 
 require 'vendor/autoload.php';
 
-use Grid\HexGrid\Hex;
+use Grid\HexGrid\Layout;
 
 //header('Content-type: image/png');
 
@@ -40,10 +40,9 @@ function drawMap($mapHex)
 
     $q = $hex[0];
     $r = $hex[1];
-      $centerHexCoords['x'] = $size * 3/2 * $q;
-      $centerHexCoords['y'] = $size * sqrt(3) * ($r + $q / 2);
     //$centerHexCoords['x'] = $size * sqrt(3) * ($q + $r/2);
-    //$centerHexCoords['y'] = $size * 3/2 * $r;
+      $centerHexCoords['x'] = (sqrt(3) * $q + sqrt(3) / 2 * $r) * $size;
+    $centerHexCoords['y'] = $size * 3/2 * $r;
     drawHex($size, $centerHexCoords);
   }
   echo "</svg>";
@@ -52,10 +51,10 @@ function drawMap($mapHex)
 }
 
 drawMap($mapHex);
-//print_();
-foreach ($mapHex as $hex)
-{
-    if ($hex == NULL) continue;
-    $object = new Hex($hex);
-    //var_dump($object);
-}
+
+$pointy = new \Grid\HexGrid\Orientation(sqrt(3.0), sqrt(3.0) / 2.0, 0.0, 3.0 / 2.0, sqrt(3.0) / 3.0, -1.0 / 3.0, 0.0, 2.0 / 3.0, 0.5);
+$flat = new \Grid\HexGrid\Orientation(3.0 / 2.0, 0.0, sqrt(3.0) / 2.0, sqrt(3.0), 2.0 / 3.0, 0.0, -1.0 / 3.0, sqrt(3.0) / 3.0, 0.0);
+
+$layout = new Layout($pointy, 75, [0,0]);
+$e = $layout->hex_to_pixel(new \Grid\HexGrid\Hex([0, -3]));
+var_dump($e);
