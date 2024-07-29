@@ -1,3 +1,7 @@
 polygon:hover{
     fill: red;
 }
+
+line:hover{
+    stroke: red;
+}

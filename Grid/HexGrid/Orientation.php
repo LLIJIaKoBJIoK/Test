@@ -14,7 +14,7 @@ class Orientation
     protected float $b2;
     protected float $b3;
 
-    protected float $start_angel;
+    public float $start_angel;
 
     public function __construct($f0, $f1, $f2, $f3, $b0, $b1, $b2, $b3, $start_angle)
     {

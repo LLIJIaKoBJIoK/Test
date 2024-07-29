@@ -1,0 +1,43 @@
+[0]=>
+  object(Grid\HexGrid\Point)#9 (2) {
+    ["x"]=>
+    float(313.39745962156)
+    ["y"]=>
+    float(200)
+  }
+  [1]=>
+  object(Grid\HexGrid\Point)#8 (2) {
+    ["x"]=>
+    float(313.39745962156)
+    ["y"]=>
+    float(150)
+  }
+  [2]=>
+  object(Grid\HexGrid\Point)#10 (2) {
+    ["x"]=>
+    float(270.09618943233)
+    ["y"]=>
+    float(125)
+  }
+  [3]=>
+  object(Grid\HexGrid\Point)#11 (2) {
+    ["x"]=>
+    float(226.79491924311)
+    ["y"]=>
+    float(150)
+  }
+  [4]=>
+  object(Grid\HexGrid\Point)#12 (2) {
+    ["x"]=>
+    float(226.79491924311)
+    ["y"]=>
+    float(200)
+  }
+  [5]=>
+  object(Grid\HexGrid\Point)#13 (2) {
+    ["x"]=>
+    float(270.09618943233)
+    ["y"]=>
+    float(225)
+  }
+}

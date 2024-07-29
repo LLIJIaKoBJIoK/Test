@@ -33,7 +33,7 @@ function drawHex($size, $centerHexCoords)
       $arrHexCoords[8] . ',' . $arrHexCoords[9] . ' ' .
       $arrHexCoords[10] . ',' . $arrHexCoords[11] . ' ' . "'";
 
-    echo "<polygon points=" . $temp . "fill='rgb(234,234,234)' id='N' stroke-width='1' stroke='rgb(0,0,0)'/>";
+    //echo "<polygon points=" . $temp . "fill='rgb(234,234,234)' id='N' stroke-width='1' stroke='rgb(0,0,0)'/>";
 
     $arr[] = $arrHexCoords;
     $arrHexCoords = [];
