@@ -29,9 +29,10 @@ function drawTable($mapSize, $arr)
 $pointy = new Orientation(sqrt(3.0), sqrt(3.0) / 2.0, 0.0, 3.0 / 2.0, sqrt(3.0) / 3.0, -1.0 / 3.0, 0.0, 2.0 / 3.0, 0.5);
 $flat = new Orientation(3.0 / 2.0, 0.0, sqrt(3.0) / 2.0, sqrt(3.0), 2.0 / 3.0, 0.0, -1.0 / 3.0, sqrt(3.0) / 3.0, 0.0);
 
-$game = new Game(2, 20);
+$game = new Game();
 $game->setMapHexSize(2)
   ->setHexSize(100)
   ->setHexOrientation($pointy);
 
 $game->run();
+

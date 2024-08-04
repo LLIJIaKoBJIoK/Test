@@ -156,6 +156,6 @@ class Game
 
   public function getCorners()
   {
-    return $this->hexCorners;
+    return json_encode($this->hexCorners);
   }
 }
