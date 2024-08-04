@@ -1,3 +1,7 @@
+svg{
+    background-color: black;
+}
+
 polygon:hover{
     fill: red;
 }

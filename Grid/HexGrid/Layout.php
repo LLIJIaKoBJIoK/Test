@@ -29,7 +29,7 @@ class Layout
 
         $angel = 2.0 * pi() * ($M->start_angel - $i) / 6;
         //Убрать прибавку и сделать правильную работу с отрицательными координатами
-        return new Point($size * cos($angel) + 400, $size * sin($angel) + 400);
+        return new Point($size * cos($angel), $size * sin($angel) + 100);
     }
 
     public function HexCorners(Hex $hex): array
