@@ -1,7 +1,8 @@
 {
   "autoload": {
     "psr-4": {
-      "Grid\\": "Grid//"
+      "Grid\\": "Grid//",
+      "Game\\": "Game//"
     }
   }
 }

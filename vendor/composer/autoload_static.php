@@ -10,6 +10,7 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         'G' => 
         array (
             'Grid\\' => 5,
+            'Game\\' => 5,
         ),
     );
 
@@ -17,6 +18,10 @@ class ComposerStaticInitd751713988987e9331980363e24189ce
         'Grid\\' => 
         array (
             0 => __DIR__ . '/../..' . '/Grid',
+        ),
+        'Game\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Game',
         ),
     );
 

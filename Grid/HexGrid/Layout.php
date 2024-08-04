@@ -5,33 +5,34 @@ namespace Grid\HexGrid;
 class Layout
 {
     protected Orientation $orientation;
-    protected float $size;
+    protected float $hexSize;
 
-    public function __construct($orientation, $size)
+    public function __construct($orientation, $hexSize)
     {
         $this->orientation = $orientation;
-        $this->size = $size;
+        $this->hexSize = $hexSize;
     }
 
     //Кубические координаты в экранные
     public function hex_to_pixel(Hex $hex): Point
     {
         $M = $this->orientation;
-        $x = ($M->f0 * $hex->coords['q'] + $M->f1 * $hex->coords['r']) * $this->size;
-        $y = ($M->f2 * $hex->coords['q'] + $M->f3 * $hex->coords['r']) * $this->size;
+        $x = ($M->f0 * $hex->coords['q'] + $M->f1 * $hex->coords['r']) * $this->hexSize;
+        $y = ($M->f2 * $hex->coords['q'] + $M->f3 * $hex->coords['r']) * $this->hexSize;
         return new Point($x, $y);
     }
 
-    public function pointy_hex_corner($i): Point
+    private function pointy_hex_corner($i): Point
     {
         $M = $this->orientation;
-        $size = $this->size;
+        $hexSize = $this->hexSize;
 
         $angel = 2.0 * pi() * ($M->start_angel - $i) / 6;
-        //Убрать прибавку и сделать правильную работу с отрицательными координатами
-        return new Point($size * cos($angel), $size * sin($angel) + 100);
+
+        return new Point($hexSize * cos($angel), $hexSize * sin($angel));
     }
 
+  //Углы шетиугольника
     public function HexCorners(Hex $hex): array
     {
         $corners = [];

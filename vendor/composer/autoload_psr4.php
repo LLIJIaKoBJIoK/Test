@@ -7,4 +7,5 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'Grid\\' => array($baseDir . '/Grid'),
+    'Game\\' => array($baseDir . '/Game'),
 );
