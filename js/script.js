@@ -1,15 +1,22 @@
-function test($a)
+function test()
 {
-    let container = document.getElementById('hex');
-    let svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute ("версия", "1.2");
-    svg.setAttribute ("Базовый профиль", "крошечный");
-    container.appendChild(svg);
+    let svg = document.getElementById('svg');
+    let polygon = document.createElementNS("http://www.w3.org/2000/svg", "polygon");
+    svg.appendChild(polygon);
 
-    let c1 = document.createElementNS("http://www.w3.org/2000/svg", "circle");
-    c1.setAttribute("cx", "100");
-    c1.setAttribute ("cy", "100");
-    c1.setAttribute ("r", "60");
-    c1.setAttribute("fill", "#336699");
-    svg.appendChild(c1);
+    let array = [[173.20508075688775, 200],
+        [173.20508075688775,100],
+        [86.60254037844386,50],
+        [-1.4210854715202004e-14,100],
+        [-1.4210854715202004e-14, 199.99999999999997],
+        [86.60254037844385,250]
+    ];
+
+    for (value of array){
+        let point = svg.createSVGPoint();
+        point.x = value[0];
+        point.y = value[1];
+        polygon.points.appendItem(point);
+    }
 }
+test()

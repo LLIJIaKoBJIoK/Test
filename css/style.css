@@ -6,6 +6,10 @@ polygon:hover{
     fill: red;
 }
 
+polygon{
+    fill: aliceblue;
+}
+
 line:hover{
     stroke: red;
 }

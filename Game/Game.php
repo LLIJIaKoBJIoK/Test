@@ -9,21 +9,19 @@ use Grid\HexGrid\Orientation;
 class Game
 {
   private array $mapHex = [];
-  private array $mapRoad = [];
+  private array $hexCorners = [];
 
   private int $mapHexSize;
   private int $hexSize;
 
   private Orientation $orientation;
 
-  public function __construct(){}
-
   public function run(): void
   {
     $this->generateMap();
     $layout = new Layout($this->orientation, $this->hexSize);
 
-    echo "<svg width='1000' height='1000'>";
+    //echo "<svg width='1000' height='1000'>";
 
     //Отрисовка карты гексов
     foreach ($this->mapHex as $hexRow)
@@ -32,7 +30,8 @@ class Game
       {
         if ($hex == NULL) continue;
         $corners = $layout->HexCorners(new Hex([$hex[0], $hex[1]]));
-        $this->drawHexMap($corners);
+        $this->hexCorners[] = $corners;
+        //$this->drawHexMap($corners);
       }
     }
 
@@ -42,11 +41,11 @@ class Game
       foreach ($hexRow as $hex) {
         if ($hex == NULL) continue;
         $a = $layout->HexCorners(new Hex([$hex[0], $hex[1]]));
-        $this->drawRoad($a);
+        //$this->drawRoad($a);
       }
     }
 
-    echo "</svg>";
+    //echo "</svg>";
   }
 
   private function generateMap(): void
@@ -153,5 +152,10 @@ class Game
     $this->orientation = $orientation;
 
     return $this;
+  }
+
+  public function getCorners()
+  {
+    return $this->hexCorners;
   }
 }
